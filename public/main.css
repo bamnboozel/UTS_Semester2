@@ -1,0 +1,486 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+.profile-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.profile-container h1 {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-container p {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.profile-container strong {
+    font-weight: bold;
+}
+
+.edit_btn {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.edit_btn:hover {
+    background-color: #0056b3;
+}
+
+
+.detail-card {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.detail-card h1 {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.detail-card p {
+    font-size: 16px;
+    color: #444;
+    margin: 10px 0;
+}
+
+.detail-card strong {
+    font-weight: bold;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.back_btn, .edit_btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+    color: white;
+    margin: 0 10px;
+}
+
+.back_btn {
+    background-color: #6c757d;
+}
+
+.back_btn:hover {
+    background-color: #5a6268;
+}
+
+.edit_btn {
+    background-color: #007bff;
+}
+
+.edit_btn:hover {
+    background-color: #0056b3;
+}
+
+.detail-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.detail-container h1 {
+    color: #333;
+    text-align: center;
+}
+
+.detail-container p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.detail-container strong {
+    color: #000;
+}
+
+.actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back_btn, .edit_btn {
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.back_btn {
+    color: #fff;
+    background-color: #6c757d;
+    margin-right: 10px;
+}
+
+.back_btn:hover {
+    background-color: #5a6268;
+}
+
+.edit_btn {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.edit_btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Style umum untuk form */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style untuk label */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Style untuk input dan select */
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Mengatur box-sizing untuk menghindari perhitungan padding ekstra */
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Style untuk hr (garis pemisah) */
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+/* Styling untuk tombol kembali dan simpan */
+.back_btn, .create_btn {
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.back_btn {
+    color: #fff;
+    background-color: #6c757d;
+    margin-right: 10px;
+}
+
+.back_btn:hover {
+    background-color: #5a6268;
+}
+
+.create_btn {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.create_btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Style untuk heading */
+h1 {
+    color: #2c3e50;
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Mengatur style garis horizontal untuk memisahkan judul */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+/* Styling untuk tombol 'Tambah Data' */
+.create_btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.create_btn:hover {
+    background-color: #45a049;
+}
+
+/* Styling untuk tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+thead {
+    background-color: #f4f4f4;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #2980b9;
+    color: white;
+}
+
+/* Styling untuk tombol aksi di tabel */
+.detail_btn, .delete_btn {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 3px;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.detail_btn {
+    background-color: #3498db;
+}
+
+.detail_btn:hover {
+    background-color: #2980b9;
+}
+
+.delete_btn {
+    background-color: #e74c3c;
+}
+
+.delete_btn:hover {
+    background-color: #c0392b;
+}
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styling untuk sidebar */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 200px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+/* Styling untuk link di dalam sidebar */
+.sidenav a {
+    padding: 10px 15px;
+    text-decoration: none; /* No underline */
+    font-size: 18px; /* Increase font size */
+    color: #818181; /* Grey color */
+    display: block; /* Make the links appear below each other */
+    transition: 0.3s; /* Smooth transition effect when hovering */
+}
+
+/* Styling saat link di-hover */
+.sidenav a:hover {
+    color: #f1f1f1; /* Light grey color on hover */
+    background-color: #575757; /* Slight dark background on hover */
+}
+
+
+/* Style the content */
+.content {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid;
+    padding: 5px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+select{
+    width: 100%;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.create_btn {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #2fdd2f;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 24px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+        margin-bottom: 10px;
+}
+
+    .create_btn:hover {
+        background-color: #027d12;
+}
+
+.delete_btn {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #e60000;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 24px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+        margin-bottom: 10px;
+}
+
+.delete_btn:hover {
+    background-color: #6e0000;
+}
+
+.edit_btn {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f9ea1c;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 24px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.edit_btn:hover {
+    background-color: #a98500;
+}
+
+.detail_btn {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #1c7ff9;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 24px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+        margin-bottom: 10px;
+}
+
+.detail_btn:hover {
+    background-color: #000864;
+}
+
+.back_btn {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #9c9c9c;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 24px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.back_btn:hover {
+    background-color: #3f3f3f;
+}
